@@ -1,0 +1,32 @@
+:root {
+--gap: 1rem;
+}
+html, body {
+margin: 0;
+padding: 0;
+}
+header {
+text-align: center;
+padding: 2rem;
+background: #eaeef7;
+}
+#projects.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: var(--gap);
+padding: 2rem;
+}
+.project {
+background: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 200px;
+}
+@media (max-width: 900px) {
+#projects.grid-container {
+grid-template-columns: 1fr;
+}
+}
